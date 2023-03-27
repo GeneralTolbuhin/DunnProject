@@ -2,7 +2,7 @@ using System;
 
 public class LinkedLiast
 {
-    public static void LinkedLST(string[] args)
+    public static void Main(string[] args)
     {
         
     }

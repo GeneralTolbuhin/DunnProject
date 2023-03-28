@@ -70,7 +70,27 @@ public class LinkList{
       current = current.next;
     }
   }
+  
+  public void Reverse(){
+    Node current = head;
+    Node previous = null;
+    Node next = null;
+    while(current != null){
+        // Store the next node.
+        next = current.next;
 
+        // Reverse the link.
+        current.next = previous;
+
+        // Move pointers one position ahead.
+        previous = current;
+        current = next;
+    }
+
+    // Update the head node.
+    head = previous;
+  }
+  
   public void Print(){
     Node temp = head;
     while(temp != null){

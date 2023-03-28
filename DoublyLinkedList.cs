@@ -30,6 +30,7 @@ public class LinkList{
   public void InsertLast(int data){
     if(head == null) {
       InsertFront(data);
+      return;
     }
     Node last = GetLast();
     Node temp = new Node(data);
@@ -91,5 +92,6 @@ public class LinkList{
       Console.WriteLine(temp.data);
       temp = temp.next;
     }
+    Console.WriteLine();
   }
 }
